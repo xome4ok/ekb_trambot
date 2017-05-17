@@ -8,6 +8,8 @@ RUN apk add --no-cache gcc python3 python3-dev libxml2-dev libxslt-dev py-lxml &
 
 ADD . /var/app
 
+WORKDIR /var/app
+
 RUN pip3 install -r /var/app/requirements.txt
 
 EXPOSE 80
