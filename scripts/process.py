@@ -1,5 +1,6 @@
 import scrapy
 
+
 class EttuSpider(scrapy.Spider):
     '''Parser for m.ettu.ru.'''
     FEED_STORAGES={'c': 'scrapy.contrib.feedexport.FileFeedStorage'} 
